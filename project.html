@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*navbar*/
+        nav {
+            background: white;
+            height: 80px;
+            width: 100%;
+        }
+
+        label.logo {
+            color: black;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 100px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            float: right;
+            margin-right: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+
+        nav ul li a {
+            color: black;
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+
+        a.active,
+        a:hover {
+            background: burlywood;
+            transition: .5s;
+        }
+
+        .checkbtn {
+            font-size: 30px;
+            color: burlywood;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+
+        #check {
+            display: none;
+        }
+
+        @media (max-width: 952px) {
+            label.logo {
+                font-size: 30px;
+                padding-left: 50px;
+            }
+
+            nav ul li a {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 858px) {
+            .checkbtn {
+                display: block;
+            }
+
+            ul {
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: #2c3e50;
+                top: 80px;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+
+            nav ul li a {
+                font-size: 20px;
+            }
+
+
+
+            #check:checked~ul {
+                left: 0;
+            }
+        }
+
+
+        /*end*/
+        #services {
+            margin: 34px;
+            display: flex;
+        }
+
+        #services .ox {
+            border: 2px solid brown;
+            padding: 34px;
+            margin: 2px 55px;
+            border-radius: 28px;
+            background: #f2f2f2;
+            margin-bottom: 20px;
+        }
+
+        #services .ox img {
+            height: 200px;
+            margin: auto;
+            display: block;
+        }
+
+        #services .ox p {
+            font-family: 'Bree Serif', serif;
+
+        }
+
+        .h-primary {
+            font-family: 'Bree Serif', serif;
+            font-size: 3.8rem;
+            padding: 12px;
+        }
+
+        .h-secondary {
+            font-family: 'Bree Serif', serif;
+            font-size: 2.3rem;
+            padding: 12px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        @media screen and (max-width : 768px) {
+            #services {
+                flex-direction: column;
+            }
+
+            #services .ox {
+                padding: 10px;
+                margin: 0px 0px;
+                margin-bottom: 10px;
+            }
+
+            #services .ox img {
+                max-width: 100%;
+            }
+
+        }
+
+        @media screen and (max-width: 1170px) {
+            #services {
+                flex-direction: column;
+            }
+
+            #services .ox {
+                padding: 10px;
+                margin: 0px 0px;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Exterior Design</label>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="Project.html">Project</a></li>
+        </ul>
+    </nav>
+
+    <section id="services-container">
+        <h1 class="h-primary center">Our Projects</h1>
+        <div id="services">
+            <div class="ox">
+                <img src="image/fg.jpg" alt="">
+                <h2 class="h-secondary center">Flower Gardens</h2>
+                <p class="center">Flower gardens are another type of garden that is really common. Almost everyone
+                    on
+                    the planet is able to appreciate the fact that flowers are quite beautiful. Having a really nice
+                    flower garden on your property is going to add a significant amount of aesthetic appeal to your
+                    yard. It’s a great way to add some color to your yard and make it more interesting from a visual
+                    perspective.</p>
+            </div>
+            <div class="ox">
+                <img src="image/hg.jpg" alt="">
+                <h2 class="h-secondary center">Herb Gardens</h2>
+                <p class="center">In the past, many people liked to grow medicinal herb gardens in order to have
+                    ingredients on hand that could be used to make medicine. With the advances in modern medicine,
+                    people don’t really grow herbs in their garden for these purposes very often. There are those
+                    who
+                    are into holistic medicinal approaches, though, and they like to keep medicinal herb gardens and
+                    make medicines in the old ways.</p>
+            </div>
+            <div class="ox">
+                <img src="image/ig.jpg" alt="">
+                <h2 class="h-secondary center">Indoor Gardens</h2>
+                <p class="center">People who live in places that have heavy snowfall often need to turn to indoor
+                    gardening in order to get their fix. Colder climates can present difficulties for outdoor
+                    gardens,
+                    and you will only have so many months out of the year where you can viably plant things. If you
+                    have
+                    the ability to create an indoor garden area for yourself, then you will be able to garden all
+                    year
+                    round, if you so choose.</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

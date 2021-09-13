@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>contact</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .container {
+            margin-top: 20px;
+
+        }
+
+        #a {
+            padding: 10px;
+            width: 350px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+
+        }
+
+        .row {
+
+            margin-top: 10px;
+        }
+
+        h3 {
+            padding-bottom: 15px;
+        }
+
+        .mapouter {
+            position: relative;
+            text-align: right;
+            width: 90%;
+            height: 400px;
+        }
+
+        .gmap_canvas {
+            overflow: hidden;
+            background: none !important;
+            width: 90%;
+            height: 400px;
+        }
+
+        .gmap_iframe {
+            height: 400px !important;
+        }
+
+        footer {
+            background-image: url("image/martin-knize-JjT_7MwREm4-unsplash.jpg");
+            background-size: cover;
+            padding: 20px;
+            margin-top: 50px;
+            text-align: center;
+            margin-bottom: 20px;
+            opacity: 0.9;
+
+        }
+
+
+        footer>div>a {
+            color: white;
+            padding: 10px;
+            padding-left: 40px;
+        }
+
+        #bn {
+
+            margin: 10px;
+            padding: 10px 30px 10px 30px;
+            font-size: 15px;
+        }
+
+        /*navbar*/
+        nav {
+            background: white;
+            height: 80px;
+            width: 100%;
+        }
+
+        label.logo {
+            color: black;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 100px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            float: right;
+            margin-right: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+
+        nav ul li a {
+            color: black;
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+
+        a.active,
+        a:hover {
+            background: burlywood;
+            transition: .5s;
+        }
+
+        .checkbtn {
+            font-size: 30px;
+            color: burlywood;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+
+        #check {
+            display: none;
+        }
+
+        @media (max-width: 952px) {
+            label.logo {
+                font-size: 30px;
+                padding-left: 50px;
+            }
+
+            nav ul li a {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 858px) {
+            .checkbtn {
+                display: block;
+            }
+
+            ul {
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: #2c3e50;
+                top: 80px;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+
+            nav ul li a {
+                font-size: 20px;
+            }
+
+
+
+            #check:checked~ul {
+                left: 0;
+            }
+        }
+
+
+        /*end*/
+    </style>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Exterior Design</label>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="Project.html">Project</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>Postal address</h3>
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+                                marginheight="0" marginwidth="0"
+                                src="https://maps.google.com/maps?width=450&amp;height=432&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                                href="https://www.fridaynightfunkin.net/">Friday Night Funkin Download</a>
+                        </div>
+
+                    </div>
+                    <div class="contact_adrress">
+                        <h4>8901 Marmora Road, Glasgow, D04 89GR.</h4>
+                        <p><span>Telephone: </span> +1 959 603 6035</p>
+                        <p><span>FAX: </span> +1 504 889 9898</p>
+                        <p>E-mail: <a href="mailto:mail@demolink.org">mail@demolink.org</a></p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h3>Contact Form</h3>
+                    <form class="hi">
+                        <input type="text" id="a" placeholder="Name">
+
+                        <input type="email" id="a" placeholder="Email..">
+                        <input type="text" id="a" placeholder="Phone No..">
+                        <textarea id="a" placeholder="Message.." style="height:200px; width:400px;"></textarea>
+
+                        <br>
+                        <input type="submit" value="SEND" id="bn">
+                        <input type="reset" value="Reset" id="bn">
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="footer">
+        <div class="col-sm-12">
+            <footer>
+                <div>
+                    <a href="#"><i class="fab fa-twitter fa-3x"></i> </a>
+                    <a href="#"><i class="fab fa-facebook-f fa-3x"></i></a>
+                    <a href="#"><i class="fab fa-google fa-3x"></i></a>
+                    <a href="#"><i class="fas fa-wifi fa-3x"></i></a>
+
+
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
